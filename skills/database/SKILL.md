@@ -260,6 +260,115 @@ pubsub.subscribe('notifications')
 - **JavaScript/Node.js**: MongoDB, Firebase
 - **Solidity**: Smart contracts (Ethereum)
 
+## Advanced Topics
+
+### Advanced SQL & Query Optimization
+- **Query Plans**: EXPLAIN ANALYZE, execution plans, index strategies
+- **Window Functions**: ROW_NUMBER, RANK, LAG, LEAD advanced patterns
+- **Common Table Expressions (CTEs)**: Recursive queries, hierarchical data
+- **Partitioning**: Table partitioning by range, hash, list
+- **Materialized Views**: Pre-computed results for performance
+- **Advanced Indexing**: Composite indexes, partial indexes, covering indexes
+- **Statistics**: Query statistics, ANALYZE command for optimization
+
+### High Availability & Replication
+- **Replication Types**: Synchronous vs. asynchronous, streaming replication
+- **Failover Strategies**: Automated failover, STONITH (split-brain prevention)
+- **Multi-region**: Cross-region replication, latency considerations
+- **Sharding**: Horizontal partitioning, shard key selection
+- **Read Replicas**: Scaling read workloads, replica lag monitoring
+- **Backup & Recovery**: PITR (point-in-time recovery), backup strategies
+
+### Performance Tuning
+- **Connection Pooling**: PgBouncer, ProxySQL, connection management
+- **Query Caching**: Redis caching, query result caching strategies
+- **Slow Query Logs**: Identifying performance bottlenecks
+- **Memory Management**: Buffer pools, memory allocation
+- **Lock Optimization**: Understanding lock types, deadlock prevention
+- **Vacuuming**: Garbage collection, bloat management
+
+### Security & Compliance
+- **Encryption**: At-rest encryption, in-transit encryption (TLS)
+- **Access Control**: User roles, row-level security (RLS), column masking
+- **Audit Logging**: Tracking changes, compliance logging
+- **Secrets Management**: Database credentials in vaults, rotation
+- **PII Protection**: Data masking, pseudonymization, anonymization
+- **Compliance**: GDPR, HIPAA, compliance automation
+
+### Advanced Data Modeling
+- **Denormalization**: Strategic denormalization for performance
+- **Time-Series Data**: Specialized schemas for time-series, retention policies
+- **Document Modeling**: Embedding vs. referencing in MongoDB
+- **Graph Databases**: Neo4j for relationship data, graph queries
+- **Temporal Data**: Valid-time and transaction-time dimensions
+- **JSON/JSONB**: Advanced JSON querying, indexing
+
+### NoSQL Advanced Patterns
+- **Distributed Transactions**: Multi-document ACID (MongoDB 4.0+)
+- **Change Streams**: Real-time data changes, event streaming
+- **Aggregation Framework**: Complex data transformations
+- **Bulk Operations**: Batch inserts, updates, deletes
+- **TTL Indexes**: Automatic data expiration
+- **Geo-spatial Queries**: Location-based queries
+
+## Common Pitfalls & Gotchas
+
+1. **Missing Indexes**: Queries doing full table scans
+   - **Fix**: Identify slow queries with EXPLAIN ANALYZE, add indexes
+   - **Impact**: 100x+ performance improvement possible
+
+2. **N+1 Queries**: Fetching related data in a loop
+   - **Fix**: Use JOINs, eager loading, aggregation frameworks
+   - **Example**: Get user with all posts in single query
+
+3. **Implicit Type Conversion**: String IDs compared with integers
+   - **Fix**: Use proper types, explicit casting
+   - **Problem**: Can bypass indexes, unpredictable results
+
+4. **Uncontrolled Query Results**: SELECT * without LIMIT
+   - **Fix**: Always paginate, specify column list
+   - **Impact**: Can crash application with large result sets
+
+5. **Missing Foreign Keys**: Data integrity issues
+   - **Fix**: Define foreign keys with CASCADE/RESTRICT constraints
+   - **Result**: Prevents orphaned records
+
+6. **No Backup Testing**: Untested backup strategy
+   - **Fix**: Regular backup testing and recovery drills
+   - **Lesson**: Backup only matters if recovery actually works
+
+7. **Replication Lag Ignored**: Reading stale data
+   - **Fix**: Monitor replication lag, use primary for current data
+   - **Example**: User creates order, immediately reads from replica (missing!)
+
+8. **Deadlocks in Transactions**: Multiple transactions blocking each other
+   - **Fix**: Consistent transaction ordering, shorter transactions
+   - **Debugging**: Enable deadlock logging, analyze patterns
+
+9. **No Monitoring**: Silent database failures
+   - **Fix**: Monitor connections, queries, replication lag, disk space
+   - **Tools**: Prometheus, Grafana, DataDog for database monitoring
+
+10. **Inadequate Disaster Recovery**: Can't recover from failures
+    - **Fix**: Documented RTO/RPO, tested recovery procedures
+    - **Planning**: Regular drills, automation, documentation
+
+## Production Deployment Checklist
+
+- [ ] Database sizing appropriate for workload
+- [ ] Backups automated and tested
+- [ ] Replication/HA configured
+- [ ] Monitoring and alerting set up
+- [ ] Connection pooling configured
+- [ ] Indexes optimized
+- [ ] Slow query logging enabled
+- [ ] Security: encryption, access control
+- [ ] Audit logging configured
+- [ ] Disaster recovery procedures documented
+- [ ] Performance tested under load
+- [ ] Data migration tested
+- [ ] Compliance requirements met
+
 ## Best Practices
 
 1. **Data Modeling** - Design for scalability and maintainability

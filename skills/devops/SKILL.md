@@ -252,6 +252,122 @@ resource "aws_security_group" "web" {
 - **Package Managers**: apt, yum, brew
 - **Container Registry**: Docker Hub, ECR, GCR, ACR
 
+## Advanced Topics
+
+### Kubernetes at Scale
+- **Multi-cluster Management**: Fleet management, federation, hub-and-spoke
+- **Workload Management**: StatefulSets, DaemonSets, Jobs, CronJobs
+- **Custom Resources**: CRDs for extending Kubernetes
+- **Network Policies**: Micro-segmentation, ingress/egress rules
+- **Storage Solutions**: StatefulSets with PersistentVolumes, StatefulSet patterns
+- **Service Mesh**: Istio, Linkerd for observability and traffic management
+- **Helm Advanced**: Chart repositories, dependency management, hooks
+- **Security**: RBAC, Pod Security Policy, admission webhooks
+- **Cost Optimization**: Resource limits, autoscaling, node consolidation
+
+### Advanced CI/CD
+- **Pipeline Patterns**: Blue-green, canary, rolling deployments
+- **GitOps Workflows**: ArgoCD, Flux for declarative deployments
+- **Artifact Management**: Binary repositories, container scanning, signing
+- **Testing Automation**: Unit, integration, E2E, security, performance tests
+- **Release Automation**: Version bumping, changelog generation, release notes
+- **Compliance Automation**: Policy enforcement, audit logging, compliance scanning
+
+### Observability & Monitoring
+- **Metrics**: Prometheus scraping, custom metrics, time-series databases
+- **Logging**: Centralized logging, log aggregation, log parsing
+- **Tracing**: Distributed tracing, correlation IDs, trace context propagation
+- **Alerting**: Alert routing, escalation policies, on-call management
+- **Dashboards**: Grafana, custom dashboards, SLO dashboards
+- **SLO/SLI**: Service level objectives, error budgets
+- **Cost Monitoring**: Resource tracking, chargeback, budget alerts
+
+### Security & Compliance
+- **Secret Management**: HashiCorp Vault, AWS Secrets Manager, sealed secrets
+- **Container Security**: Scanning, signing, registry policy enforcement
+- **Network Security**: Network policies, service mesh security, mTLS
+- **IAM/RBAC**: Least privilege, role design, access reviews
+- **Audit Logging**: Compliance logging, tamper detection
+- **Compliance**: HIPAA, PCI-DSS, SOC 2, GDPR compliance automation
+- **Vulnerability Management**: CVE tracking, patching, remediation
+
+### Advanced Terraform
+- **State Management**: Remote state, locking, state migrations
+- **Modules**: Module patterns, local vs. remote modules, testing
+- **Workspaces**: Environment separation, state isolation
+- **Policy as Code**: Sentinel, OPA for compliance enforcement
+- **Testing**: Terratest, terraform test, plan output validation
+- **Version Management**: Provider versioning, constraint handling
+- **Multi-cloud**: Deploying across AWS, GCP, Azure
+
+### Disaster Recovery & Business Continuity
+- **Backup Strategies**: RTO, RPO, backup retention, backup testing
+- **Database Replication**: Synchronous vs. asynchronous, failover handling
+- **Disaster Recovery Drills**: Regular testing, documentation, automation
+- **Multi-region**: Geographic redundancy, data replication, traffic failover
+- **Chaos Engineering**: Intentional failures, resilience testing, learning
+- **Post-incident**: Blameless postmortems, action items, prevention
+
+## Common Pitfalls & Gotchas
+
+1. **Docker Layer Caching Ignored**: Building large layers repeatedly
+   - **Fix**: Put frequently changing layers last
+   - **Example**: COPY code last, dependencies early
+
+2. **No Resource Limits**: Container consuming all node resources
+   - **Fix**: Set requests and limits for all containers
+   - **Example**: `resources: {requests: {memory: "256Mi", cpu: "100m"}}`
+
+3. **Secrets in Environment Variables**: Exposed in process listing
+   - **Fix**: Use secret management (Vault, Sealed Secrets, ExternalSecrets)
+   - **Impact**: Prevents accidental secret exposure
+
+4. **Stateful Services in Containers**: Hard to scale and manage
+   - **Fix**: Design stateless services, use StatefulSets if needed
+   - **Example**: Move sessions to Redis, not in-memory
+
+5. **Manual Infrastructure Changes**: Drift from version control
+   - **Fix**: All infrastructure as code, GitOps workflows
+   - **Problem**: Prevents reproducibility, hard to audit
+
+6. **No Network Policies**: All pods can communicate with all pods
+   - **Fix**: Implement network policies for micro-segmentation
+   - **Security**: Reduces blast radius of compromised containers
+
+7. **Inadequate Monitoring**: Silent failures in production
+   - **Fix**: Comprehensive monitoring (metrics, logs, traces)
+   - **Tools**: Prometheus, Grafana, ELK, Jaeger
+
+8. **Poor Secrets Rotation**: Long-lived credentials
+   - **Fix**: Automated rotation, short-lived tokens
+   - **Example**: AWS IAM temporary credentials, service account tokens
+
+9. **No Cost Monitoring**: Unexpected cloud bills
+   - **Fix**: Budget alerts, resource tagging, cost analysis
+   - **Tools**: AWS Cost Explorer, GCP Cost Management
+
+10. **Configuration Drift**: Infrastructure state differs from version control
+    - **Fix**: GitOps, declarative management, continuous reconciliation
+    - **Tools**: ArgoCD, Flux, Terraform
+
+## Production Deployment Checklist
+
+- [ ] Container images scanned for vulnerabilities
+- [ ] Resource limits and requests configured
+- [ ] Health checks configured (liveness, readiness)
+- [ ] Secrets managed properly (not in code, encrypted)
+- [ ] Logging and monitoring set up
+- [ ] Network policies configured
+- [ ] RBAC configured with least privilege
+- [ ] Backup and disaster recovery tested
+- [ ] Performance tested under load
+- [ ] Security audit completed
+- [ ] Documentation complete (runbooks, architecture)
+- [ ] On-call procedures established
+- [ ] Incident response plan in place
+- [ ] Cost monitoring configured
+- [ ] Compliance requirements verified
+
 ## Best Practices
 
 1. **Infrastructure as Code** - Version control for infrastructure

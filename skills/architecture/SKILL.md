@@ -156,6 +156,128 @@ Patterns:
 - **Audit Logging**: Change tracking
 - **Secrets Management**: API keys, passwords
 
+## Advanced Topics
+
+### Distributed Systems Patterns
+- **Consensus Algorithms**: Raft, Paxos for leader election
+- **Eventual Consistency**: Handling stale data, conflict resolution
+- **Distributed Transactions**: Two-phase commit, Saga pattern
+- **CAP Theorem**: Consistency, Availability, Partition tolerance tradeoffs
+- **Quorum-based Systems**: Majority voting for reliability
+- **Gossip Protocols**: Peer-to-peer information propagation
+- **Byzantine Fault Tolerance**: Handling malicious actors
+
+### Advanced Caching Strategies
+- **Cache Invalidation**: TTL, event-driven, manual
+- **Cache Coherence**: Multi-level caching, invalidation cascades
+- **Cache Stampede**: Preventing thundering herd problem
+- **Write-through vs. Write-behind**: Consistency vs. performance
+- **Hot/Cold Data**: Tiered caching strategies
+- **Cache Warming**: Pre-loading critical data
+- **Distributed Caching**: Redis clusters, cache replication
+
+### Scalability & Performance
+- **Vertical vs. Horizontal Scaling**: When to use each
+- **Load Balancing**: Round-robin, least-connections, consistent hashing
+- **Database Optimization**: Indexing, query planning, materialized views
+- **CDN**: Content delivery, edge computing
+- **Batch Processing vs. Stream Processing**: Trade-offs and use cases
+- **Rate Limiting**: Token bucket, sliding window algorithms
+- **Resource Pooling**: Connection pools, thread pools
+
+### System Design for Reliability
+- **Fault Tolerance**: Graceful degradation, circuit breakers
+- **Retry Strategies**: Exponential backoff, jitter
+- **Bulkheads**: Isolating failures, preventing cascade
+- **Timeouts**: Preventing cascading timeouts
+- **Health Checks**: Liveness, readiness probes
+- **Graceful Shutdown**: Clean shutdown procedures
+- **Monitoring & Observability**: Metrics, logs, traces
+
+### Domain-Driven Design (DDD)
+- **Bounded Contexts**: Clear domain boundaries
+- **Aggregates**: Grouping related entities
+- **Value Objects**: Immutable objects without identity
+- **Repositories**: Abstracting data access
+- **Ubiquitous Language**: Shared terminology across team
+- **Event Sourcing**: Storing events instead of state
+- **CQRS**: Command Query Responsibility Segregation
+
+### API Design at Scale
+- **Versioning**: URL, header, or content negotiation
+- **Backward Compatibility**: Supporting old and new versions
+- **Rate Limiting**: Protecting against abuse
+- **Authentication**: OAuth 2.0, JWT, mTLS
+- **Authorization**: RBAC, ABAC
+- **Hypermedia**: HATEOAS for discoverability
+- **Webhooks**: Push notifications for events
+
+### Cost Optimization
+- **Resource Right-Sizing**: Matching resources to demand
+- **Auto-scaling**: Dynamic capacity adjustment
+- **Reserved Instances**: Cost savings for predictable workloads
+- **Spot Instances**: Using excess capacity at discount
+- **Data Lifecycle**: Archival, deletion of old data
+- **Regional Optimization**: Choosing cost-effective regions
+- **Monitoring Spend**: Cost tracking, anomaly detection
+
+## Common Pitfalls & Gotchas
+
+1. **Over-Engineering**: Over-complex architecture for simple needs
+   - **Fix**: Start simple, evolve as requirements grow
+   - **YAGNI**: You Aren't Gonna Need It
+
+2. **Ignoring Network Latency**: Assuming instant communication
+   - **Fix**: Design for network delays, use caching
+   - **Lesson**: Network partitions are inevitable
+
+3. **Synchronous Everywhere**: Tight coupling between services
+   - **Fix**: Use asynchronous messaging where appropriate
+   - **Benefit**: Better resilience and scalability
+
+4. **Single Point of Failure**: No redundancy
+   - **Fix**: Replicate critical components
+   - **Example**: Multiple database replicas, load-balanced servers
+
+5. **Inadequate Testing**: Untested architecture
+   - **Fix**: Chaos engineering, load testing, resilience testing
+   - **Goal**: Test failure scenarios before production
+
+6. **No Disaster Recovery Plan**: Can't recover from failures
+   - **Fix**: Documented RTO/RPO, tested recovery procedures
+   - **Practice**: Regular disaster recovery drills
+
+7. **Ignoring Cost**: Expensive architecture for simple app
+   - **Fix**: Monitor costs, use cost-effective services
+   - **Example**: Serverless for variable load, reserved instances for baseline
+
+8. **Poor API Design**: Breaking changes, inconsistent design
+   - **Fix**: Thoughtful API design, versioning strategy
+   - **Impact**: Reduces client maintenance burden
+
+9. **Inconsistent Data**: No strategy for multi-database consistency
+   - **Fix**: Eventual consistency, event sourcing, transactions
+   - **Trade-off**: Consistency vs. availability
+
+10. **Technical Debt**: Shortcuts that compound over time
+    - **Fix**: Regular refactoring, code quality focus
+    - **Prevention**: Architectural decisions should prevent debt
+
+## Production Architecture Checklist
+
+- [ ] Scalability plan documented (1x, 10x, 100x users)
+- [ ] Disaster recovery plan in place (RTO, RPO defined)
+- [ ] Monitoring and alerting configured
+- [ ] Security review completed
+- [ ] Performance tested under load
+- [ ] Cost analysis and optimization done
+- [ ] Data retention and archival policies defined
+- [ ] Compliance requirements met
+- [ ] Documentation complete (architecture decisions, runbooks)
+- [ ] Team trained on architecture
+- [ ] Incident response procedures defined
+- [ ] Backup and restore tested
+
 ## Learning Path
 
 ### Month 1-2: Fundamentals
