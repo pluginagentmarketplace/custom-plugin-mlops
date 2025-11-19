@@ -1,0 +1,104 @@
+{
+  "hooks": {
+    "progress_tracking": {
+      "enabled": true,
+      "description": "Automatically track learning progress through agents",
+      "events": ["command_execute", "skill_complete", "project_complete"],
+      "action": "update_user_progress"
+    },
+    "skill_validation": {
+      "enabled": true,
+      "description": "Validate skill prerequisites before learning",
+      "events": ["learn_command"],
+      "action": "check_prerequisites"
+    },
+    "project_recommendations": {
+      "enabled": true,
+      "description": "Recommend projects based on learning path",
+      "events": ["skill_complete", "assessment_complete"],
+      "action": "suggest_projects"
+    },
+    "assessment_tracking": {
+      "enabled": true,
+      "description": "Track assessment history and improvements",
+      "events": ["assess_command"],
+      "action": "record_assessment_results"
+    },
+    "resource_curation": {
+      "enabled": true,
+      "description": "Curate and suggest relevant learning resources",
+      "events": ["learn_command", "skill_query"],
+      "action": "fetch_resources"
+    },
+    "milestone_celebration": {
+      "enabled": true,
+      "description": "Celebrate milestones and achievements",
+      "events": ["level_increase", "project_complete", "streak_milestone"],
+      "action": "notify_achievement"
+    },
+    "agent_routing": {
+      "enabled": true,
+      "description": "Route queries to most relevant agent",
+      "events": ["command_execute"],
+      "action": "agent_selection"
+    },
+    "context_preservation": {
+      "enabled": true,
+      "description": "Preserve user context across sessions",
+      "events": ["session_start", "session_end"],
+      "action": "sync_user_data"
+    }
+  },
+  "automation": {
+    "daily_digest": {
+      "enabled": true,
+      "schedule": "0 9 * * *",
+      "action": "send_daily_learning_digest"
+    },
+    "weekly_review": {
+      "enabled": true,
+      "schedule": "0 10 * * 0",
+      "action": "send_weekly_progress_report"
+    },
+    "monthly_assessment": {
+      "enabled": true,
+      "schedule": "0 10 1 * *",
+      "action": "suggest_monthly_reassessment"
+    },
+    "skill_reminders": {
+      "enabled": true,
+      "schedule": "0 18 * * *",
+      "action": "send_practice_reminders"
+    }
+  },
+  "analytics": {
+    "track_learning_paths": true,
+    "track_project_completion": true,
+    "track_assessment_improvements": true,
+    "track_command_usage": true,
+    "track_skill_mastery": true
+  },
+  "notifications": {
+    "enabled": true,
+    "channels": ["console", "email", "webhook"],
+    "events": {
+      "level_up": "notify_user",
+      "project_completed": "notify_user",
+      "streak_broken": "notify_user",
+      "new_resource": "notify_user",
+      "recommended_project": "notify_user"
+    }
+  },
+  "data_sync": {
+    "enabled": true,
+    "backend_url": "https://api.ultrathink.dev",
+    "sync_interval": 300,
+    "entities": [
+      "user_progress",
+      "assessment_results",
+      "completed_projects",
+      "skill_levels",
+      "learning_paths"
+    ]
+  }
+}

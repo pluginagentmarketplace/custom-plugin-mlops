@@ -1,0 +1,121 @@
+{
+  "name": "custom-plugin-mlops",
+  "version": "1.0.0",
+  "description": "Ultrathink Developer Roadmap Plugin - 65+ roles, 7 specialized agents with comprehensive learning paths and skills",
+  "author": "Ultrathink MLOps Team",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-mlops",
+  "keywords": [
+    "developer-roadmap",
+    "learning-paths",
+    "agent-skills",
+    "career-development",
+    "ultrathink",
+    "mlops"
+  ],
+  "agents": [
+    {
+      "id": "frontend-design-agent",
+      "name": "Frontend & Design Systems",
+      "description": "Expert in HTML, CSS, JavaScript, React, Vue, Angular, Next.js, and UX Design",
+      "roles": 11
+    },
+    {
+      "id": "backend-api-agent",
+      "name": "Backend & API Development",
+      "description": "Specialist in Node.js, Python, PHP, GraphQL, ASP.NET Core, Spring Boot, and API Design",
+      "roles": 11
+    },
+    {
+      "id": "mobile-agent",
+      "name": "Mobile Development",
+      "description": "Expert in Android, iOS, React Native, Flutter, and Swift",
+      "roles": 6
+    },
+    {
+      "id": "data-ai-agent",
+      "name": "Data Science & AI/ML",
+      "description": "Specialist in AI Engineering, Data Science, MLOps, and Prompt Engineering",
+      "roles": 8
+    },
+    {
+      "id": "devops-cloud-agent",
+      "name": "DevOps & Cloud Infrastructure",
+      "description": "Expert in Docker, Kubernetes, Terraform, AWS, and CI/CD pipelines",
+      "roles": 9
+    },
+    {
+      "id": "database-agent",
+      "name": "Database & Data Management",
+      "description": "Specialist in PostgreSQL, MongoDB, Redis, SQL, and Blockchain",
+      "roles": 7
+    },
+    {
+      "id": "architecture-agent",
+      "name": "Software Architecture & Leadership",
+      "description": "Expert in System Design, Software Architecture, Engineering Management, QA, and Game Development",
+      "roles": 11
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "description": "Start learning with guided paths"
+    },
+    {
+      "name": "browse-agent",
+      "description": "Explore all agents and their capabilities"
+    },
+    {
+      "name": "assess",
+      "description": "Assess your knowledge and get personalized recommendations"
+    },
+    {
+      "name": "projects",
+      "description": "View hands-on projects for practical learning"
+    }
+  ],
+  "skills": [
+    {
+      "category": "frontend",
+      "name": "frontend-development",
+      "description": "Frontend web development with modern frameworks and tools"
+    },
+    {
+      "category": "backend",
+      "name": "backend-development",
+      "description": "Backend systems, APIs, and server-side development"
+    },
+    {
+      "category": "mobile",
+      "name": "mobile-development",
+      "description": "Cross-platform and native mobile app development"
+    },
+    {
+      "category": "data-ai",
+      "name": "ai-machine-learning",
+      "description": "AI/ML systems, data science, and LLM applications"
+    },
+    {
+      "category": "devops",
+      "name": "devops-cloud",
+      "description": "DevOps practices, containerization, and cloud infrastructure"
+    },
+    {
+      "category": "database",
+      "name": "database-management",
+      "description": "Database design, optimization, and data management"
+    },
+    {
+      "category": "architecture",
+      "name": "system-architecture",
+      "description": "System design, architecture patterns, and technical leadership"
+    }
+  ],
+  "stats": {
+    "total_agents": 7,
+    "total_roles": 65,
+    "learning_hours": 1000,
+    "projects": 50,
+    "skills_per_agent": 5
+  }
+}
