@@ -1,510 +1,262 @@
-# Ultrathink Custom-Plugin-MLOps
+<div align="center">
 
-**A comprehensive Claude Code plugin for mastering 65+ developer roles across 7 specialized domains.**
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Mlops+Assistant;7+Agents+%7C+7+Skills;Claude+Code+Plugin" alt="Mlops Assistant" />
 
-[![Repository](https://img.shields.io/badge/Repository-custom--plugin--mlops-blue)](https://github.com/pluginagentmarketplace/custom-plugin-mlops)
-[![Roles](https://img.shields.io/badge/Roles-65%2B-brightgreen)](./README.md)
-[![Agents](https://img.shields.io/badge/Agents-7-blue)](./README.md)
-[![Skills](https://img.shields.io/badge/Skills-70%2B-orange)](./README.md)
-[![Projects](https://img.shields.io/badge/Projects-50%2B-yellow)](./README.md)
+<br/>
+
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-mlops/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
+
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-7-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
+
+<br/>
+
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-mlops)
 
 ---
 
-## 🎯 Overview
+### What is this?
 
-Ultrathink's **custom-plugin-mlops** is a production-ready Claude Code plugin that provides structured learning paths across modern software development specializations. Whether you're a beginner starting your coding journey or an experienced developer looking to specialize, this plugin guides you through 7 major domains with 65+ distinct career paths.
+> **Mlops Assistant** is a Claude Code plugin with **7 agents** and **7 skills** for mlops development.
 
-### 🌟 What Makes This Plugin Special?
+</div>
 
-✅ **7 Specialized Agents** - Expert guidance in each domain
-✅ **65+ Career Paths** - Cover every major development role
-✅ **70+ Core Skills** - Detailed learning content for each skill
-✅ **50+ Hands-On Projects** - Real-world project experience
-✅ **Structured Learning Paths** - From beginner to expert
-✅ **Modern & Updated** - Based on 2024-2025 developer roadmaps
-✅ **Professional Quality** - Used by enterprises and bootcamps
+---
+
+## 📑 Table of Contents
+
+<details>
+<summary>Click to expand</summary>
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
 
 ---
 
 ## 🚀 Quick Start
 
-### Installation
+### Prerequisites
 
-#### Option 1: From Directory
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
+
 ```bash
-# Clone or download the repository
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-mlops
+
+# Step 2️⃣ Install the plugin
+/plugin install custom-plugin-mlops@pluginagentmarketplace-mlops
+
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
+```
+
+</details>
+
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
+
+```bash
+# Clone the repository
 git clone https://github.com/pluginagentmarketplace/custom-plugin-mlops.git
+cd custom-plugin-mlops
 
-# Use in Claude Code
-claude code load ./custom-plugin-mlops
+# Load locally
+/plugin load .
+
+# Restart Claude Code
 ```
 
-#### Option 2: From GitHub
-```bash
-# Add directly to Claude Code plugins
-# Repository: https://github.com/pluginagentmarketplace/custom-plugin-mlops
-```
+</details>
 
-### First Steps
+### ✅ Verify Installation
 
-Once installed, use these commands:
+After restart, you should see these agents:
 
 ```
-/learn frontend react beginner
-/browse-agent
-/assess
-/projects frontend beginner
+custom-plugin-mlops:05-devops-cloud-agent
+custom-plugin-mlops:07-architecture-agent
+custom-plugin-mlops:01-frontend-design-agent
+custom-plugin-mlops:04-data-ai-agent
+custom-plugin-mlops:06-database-agent
+... and 2 more
 ```
-
----
-
-## 📚 The 7 Agents
-
-### 1. **Frontend & Design Systems** 🎨
-**11 specialized roles**
-
-Master modern web development with React, Vue, Angular, Next.js, TypeScript, and UX Design.
-
-```
-/learn frontend react intermediate
-/learn frontend typescript advanced
-/learn frontend nextjs beginner
-/learn frontend design-systems advanced
-```
-
-**Key Skills:** HTML5, CSS3, JavaScript, TypeScript, React, Vue, Angular, Next.js, Accessibility, Performance, Testing, Design Systems
-
----
-
-### 2. **Backend & API Development** 🔧
-**11 specialized roles**
-
-Build robust server-side systems using Node.js, Python, PHP, Java, C#, and GraphQL.
-
-```
-/learn backend nodejs intermediate
-/learn backend python fastapi advanced
-/learn backend graphql beginner
-/learn backend microservices intermediate
-```
-
-**Key Skills:** Node.js, Python, PHP, Java, C#, REST APIs, GraphQL, Databases, Authentication, Microservices
-
----
-
-### 3. **Mobile Development** 📱
-**6 specialized roles**
-
-Create native and cross-platform apps with Android (Kotlin), iOS (Swift), React Native, and Flutter.
-
-```
-/learn mobile android kotlin intermediate
-/learn mobile ios swift advanced
-/learn mobile flutter beginner
-/learn mobile react-native intermediate
-```
-
-**Key Skills:** Kotlin, Swift, React Native, Flutter, Mobile UI/UX, APIs, Local Storage, App Deployment
-
----
-
-### 4. **Data Science & AI/ML** 🤖
-**8 specialized roles**
-
-Master machine learning, deep learning, LLMs, MLOps, and prompt engineering.
-
-```
-/learn data-ai machine-learning beginner
-/learn data-ai deep-learning intermediate
-/learn data-ai llm-development advanced
-/learn data-ai mlops intermediate
-/learn data-ai prompt-engineering beginner
-```
-
-**Key Skills:** Python, Machine Learning, Deep Learning, LLMs, Prompt Engineering, MLOps, Data Pipelines
-
----
-
-### 5. **DevOps & Cloud Infrastructure** ☁️
-**9 specialized roles**
-
-Master containerization, orchestration, infrastructure as code, and cloud platforms.
-
-```
-/learn devops docker intermediate
-/learn devops kubernetes advanced
-/learn devops terraform beginner
-/learn devops aws intermediate
-/learn devops cicd advanced
-```
-
-**Key Skills:** Docker, Kubernetes, Terraform, AWS, GCP, Azure, CI/CD, Monitoring, Linux, Bash
-
----
-
-### 6. **Database & Data Management** 💾
-**7 specialized roles**
-
-Learn relational and NoSQL databases, caching, data modeling, and blockchain.
-
-```
-/learn database postgresql advanced
-/learn database mongodb intermediate
-/learn database redis beginner
-/learn database sql advanced
-/learn database blockchain advanced
-```
-
-**Key Skills:** SQL, PostgreSQL, MongoDB, Redis, Data Modeling, Replication, Performance Tuning, Blockchain
-
----
-
-### 7. **Software Architecture & Leadership** 🏗️
-**11 specialized roles**
-
-Master system design, design patterns, distributed systems, and technical leadership.
-
-```
-/learn architecture system-design intermediate
-/learn architecture design-patterns advanced
-/learn architecture microservices intermediate
-/learn architecture engineering-management beginner
-```
-
-**Key Skills:** System Design, Design Patterns, Distributed Systems, Scalability, Cloud Architecture, Leadership
-
----
-
-## 📊 Plugin Statistics
-
-| Metric | Count |
-|--------|-------|
-| **Specialized Agents** | 7 |
-| **Career Paths/Roles** | 65+ |
-| **Core Skills** | 70+ |
-| **Hands-On Projects** | 50+ |
-| **Learning Hours** | 1000+ |
-| **Code Examples** | 500+ |
-
----
-
-## 🎓 Learning Paths
-
-### Structured Progression
-
-Each agent provides:
-1. **Beginner Path** - Start from basics (3-6 months)
-2. **Intermediate Path** - Deepen expertise (6-12 months)
-3. **Advanced Path** - Specialize (12+ months)
-4. **Expert Level** - Mastery and leadership (2+ years)
-
-### Example: Becoming a React Specialist
-
-```
-Month 1-2: HTML/CSS/JavaScript Fundamentals
-Month 3: React Basics (JSX, Components, Props)
-Month 4-5: Advanced React (Hooks, State Management, Performance)
-Month 6: Next.js Framework & Full-Stack Development
-Month 7+: Design Systems & Production Optimization
-```
-
----
-
-## 🎯 Core Commands
-
-### `/learn` - Start Learning
-```
-/learn [agent] [skill] [level]
-
-Examples:
-/learn frontend react intermediate
-/learn backend python advanced
-/learn mobile flutter beginner
-/learn data-ai machine-learning intermediate
-/learn devops kubernetes advanced
-/learn database postgresql advanced
-/learn architecture system-design intermediate
-```
-
-### `/browse-agent` - Explore Agents
-```
-/browse-agent [agent]
-
-Examples:
-/browse-agent
-/browse-agent frontend
-/browse-agent all
-```
-
-### `/assess` - Evaluate Skills
-```
-/assess [agent] [optional: skill]
-
-Examples:
-/assess
-/assess frontend
-/assess backend javascript
-/assess data-ai machine-learning
-```
-
-### `/projects` - Find Projects
-```
-/projects [agent] [level] [optional: technology]
-
-Examples:
-/projects
-/projects frontend beginner
-/projects backend intermediate python
-/projects mobile advanced flutter
-/projects data-ai beginner
-```
-
----
-
-## 📁 Plugin Structure
-
-```
-custom-plugin-mlops/
-├── .claude-plugin/
-│   └── plugin.json                 ← Plugin manifest
-│
-├── agents/                         ← 7 Agent definitions
-│   ├── 01-frontend-design-agent.md
-│   ├── 02-backend-api-agent.md
-│   ├── 03-mobile-agent.md
-│   ├── 04-data-ai-agent.md
-│   ├── 05-devops-cloud-agent.md
-│   ├── 06-database-agent.md
-│   └── 07-architecture-agent.md
-│
-├── commands/                       ← Slash commands
-│   ├── learn.md
-│   ├── browse-agent.md
-│   ├── assess.md
-│   └── projects.md
-│
-├── skills/                         ← Skill modules
-│   ├── frontend/SKILL.md
-│   ├── backend/SKILL.md
-│   ├── mobile/SKILL.md
-│   ├── data-ai/SKILL.md
-│   ├── devops/SKILL.md
-│   ├── database/SKILL.md
-│   └── architecture/SKILL.md
-│
-├── hooks/
-│   └── hooks.json                 ← Automation & tracking
-│
-├── README.md                       ← This file
-└── CHANGELOG.md                    ← Version history
-```
-
----
-
-## 🛠️ Technologies Covered
-
-### Languages
-JavaScript/TypeScript, Python, Java, C#, PHP, Go, Rust, Kotlin, Swift, Dart, Solidity, Bash/Shell
-
-### Frameworks & Libraries
-React, Vue, Angular, Next.js, Express, FastAPI, Django, Spring Boot, ASP.NET Core, Laravel, React Native, Flutter
-
-### Databases
-PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, DynamoDB, Snowflake, BigQuery
-
-### DevOps & Cloud
-Docker, Kubernetes, Terraform, AWS, GCP, Azure, Jenkins, GitHub Actions, GitLab CI, ArgoCD
-
-### Data & AI
-NumPy, Pandas, scikit-learn, PyTorch, TensorFlow, Hugging Face, LangChain, MLflow, Ray
-
----
-
-## 📖 Documentation
-
-### Learning Resources
-- **Interactive Guides** - Step-by-step learning
-- **Code Examples** - 500+ code snippets
-- **Best Practices** - Industry standards
-- **Real-World Patterns** - Production-ready architectures
-
-### Project Resources
-- **Project Specifications** - Clear requirements
-- **Starter Templates** - Boilerplate code
-- **Testing Guides** - Quality assurance
-- **Deployment Instructions** - Going to production
-
-### Assessment Tools
-- **Skill Evaluation** - Know your level
-- **Gap Analysis** - Identify what to learn
-- **Recommendations** - Personalized paths
-- **Progress Tracking** - Track improvements
-
----
-
-## 🎓 For Different Learners
-
-### Beginners
-Start with `/learn` and choose "beginner" level for any agent.
-- Foundational understanding
-- Basic project work
-- 3-6 month timeline
-
-### Career Changers
-Use `/assess` to evaluate strengths, then `/learn` for skill gaps.
-- Accelerated learning paths
-- Practical projects
-- Job-ready skills
-
-### Advanced Developers
-Use `/browse-agent` to find specializations.
-- Deep technical knowledge
-- Architecture patterns
-- Leadership paths
-
-### Organizations
-Deploy for training and onboarding.
-- Standardized curriculum
-- Progress tracking
-- Certification paths
 
 ---
 
 ## ✨ Features
 
-### 🎯 Structured Learning
-- Curated learning paths from beginners to experts
-- Clear progression and milestones
-- Real-world project work
-
-### 🤖 Intelligent Routing
-- Agent-based system matches expertise
-- Context-aware recommendations
-- Personalized learning paths
-
-### 📊 Progress Tracking
-- Skill assessments and evaluations
-- Learning progress monitoring
-- Achievement tracking
-
-### 🚀 Production Ready
-- Professional-grade content
-- Industry best practices
-- Scalable architectures
-
-### 🔄 Continuously Updated
-- Based on latest technology trends
-- Regular content updates
-- Community contributions
+| Feature | Description |
+|---------|-------------|
+| 🤖 **7 Agents** | Specialized AI agents for mlops tasks |
+| 🛠️ **7 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **4 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
 
 ---
 
-## 📈 Learning Timeline by Agent
+## 🤖 Agents
 
-| Agent | Beginner | Intermediate | Advanced |
-|-------|----------|--------------|----------|
-| Frontend | 3-6 mo | 6-12 mo | 12+ mo |
-| Backend | 6-12 mo | 12-18 mo | 18+ mo |
-| Mobile | 3-6 mo/platform | 6-12 mo | 12+ mo |
-| Data/AI | 4-6 mo | 6-12 mo | 12-24 mo |
-| DevOps | 6-9 mo | 9-12 mo | 12-18 mo |
-| Database | 3-6 mo/tech | 6-12 mo | 12+ mo |
-| Architecture | 12-18 mo | 18-24 mo | 24+ mo |
+### 7 Specialized Agents
+
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **05-devops-cloud-agent** | Master DevOps, Cloud Infrastructure, and Site Reliability En |
+| 2 | **07-architecture-agent** | Master Software Architecture, System Design, and Technical L |
+| 3 | **01-frontend-design-agent** | Expert in HTML, CSS, JavaScript, TypeScript, React, Vue, Ang |
+| 4 | **04-data-ai-agent** | Master AI/ML, Data Science, and MLOps with 8+ roles. Build p |
+| 5 | **06-database-agent** | Master SQL, PostgreSQL, MongoDB, Redis, and Blockchain with  |
+| 6 | **03-mobile-agent** | Expert in Android (Kotlin), iOS (Swift), React Native, Flutt |
+| 7 | **02-backend-api-agent** | Expert in Node.js, Python, PHP, Java, C#, GraphQL, and API D |
 
 ---
 
-## 🎯 Success Stories
+## 🛠️ Skills
 
-This plugin is used by:
-- ✅ Coding bootcamps
-- ✅ Tech companies
-- ✅ Freelance developers
-- ✅ Career changers
-- ✅ University CS programs
-- ✅ Individual learners
+### Available Skills
+
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `data-ai` | Master AI, machine learning, and data science. Learn Python, | `Skill("custom-plugin-mlops:data-ai")` |
+| `database` | Master database design and management. Learn SQL, PostgreSQL | `Skill("custom-plugin-mlops:database")` |
+| `devops` | Master DevOps, cloud infrastructure, containerization, and K | `Skill("custom-plugin-mlops:devops")` |
+| `frontend` | Master modern frontend web development with HTML5, CSS3, Jav | `Skill("custom-plugin-mlops:frontend")` |
+| `backend` | Master backend API development with Node.js, Python, PHP, Ja | `Skill("custom-plugin-mlops:backend")` |
+| `architecture` | Master software architecture, system design, design patterns | `Skill("custom-plugin-mlops:architecture")` |
+| `mobile` | Master mobile app development across Android (Kotlin), iOS ( | `Skill("custom-plugin-mlops:mobile")` |
+
+---
+
+## ⌨️ Commands
+
+| Command | Description |
+|---------|-------------|
+| `/learn` | /learn |
+| `/assess` | /assess |
+| `/browse-agent` | agent |
+| `/projects` | /projects |
+
+---
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
+
+---
+
+## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
+
+```
+custom-plugin-mlops/
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 7 agents
+├── 📁 skills/              # 7 skills (Golden Format)
+├── 📁 commands/            # 4 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
+```
+
+</details>
+
+---
+
+## 📅 Metadata
+
+| Field | Value |
+|-------|-------|
+| **Version** | 1.0.0 |
+| **Last Updated** | 2025-12-29 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 7 |
+| **Skills** | 7 |
+| **Commands** | 4 |
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! To contribute:
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your improvements
+2. Create your feature branch
+3. Follow the Golden Format for new skills
 4. Submit a pull request
 
-See CONTRIBUTING.md for details.
+---
+
+## ⚠️ Security
+
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
 
 ---
 
-## 📄 License
+## 📝 License
 
-This plugin is released under the MIT License. See LICENSE for details.
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
 
----
-
-## 🔗 Links
-
-- **Repository**: https://github.com/pluginagentmarketplace/custom-plugin-mlops
-- **Issues**: https://github.com/pluginagentmarketplace/custom-plugin-mlops/issues
-- **Discussions**: https://github.com/pluginagentmarketplace/custom-plugin-mlops/discussions
-- **Roadmap**: https://github.com/pluginagentmarketplace/custom-plugin-mlops/projects/1
+Custom License - See [LICENSE](LICENSE) for details.
 
 ---
 
-## 📧 Support
+## 👥 Contributors
 
-Need help?
-
-- **Documentation**: See README and CONTRIBUTING files
-- **Issues**: Report bugs on GitHub Issues
-- **Discussions**: Ask questions in Discussions
-- **Changelog**: Check CHANGELOG.md for updates
-
----
-
-## 🌟 Testimonials
-
-> "This plugin completely transformed my learning journey from bootcamp dropout to senior developer" - Student
-
-> "We use this for all our onboarding. It saves us months of training" - CTO
-
-> "Best structured resource I've found for learning modern dev skills" - Career Changer
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
 
 ---
 
-## 🚀 Get Started Now!
+<div align="center">
 
-### Installation
-```bash
-git clone https://github.com/pluginagentmarketplace/custom-plugin-mlops.git
-claude code load ./custom-plugin-mlops
-```
+**Made with ❤️ for the Claude Code Community**
 
-### First Learning
-```
-/learn frontend react beginner
-```
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
 
-### Explore All Agents
-```
-/browse-agent
-```
-
-### Evaluate Your Skills
-```
-/assess
-```
-
----
-
-**Made with ❤️ by Ultrathink Team**
-
-**Version**: 1.0.0 | **Last Updated**: November 2024
-
----
-
-## 🎓 Happy Learning! 🚀
-
-Choose your path, master your skills, and become the developer you aspire to be.
+</div>

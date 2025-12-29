@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-mlops",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "custom-plugin-mlops",
+      "source": "./",
+      "description": "Claude Code plugin for mlops development",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,3 +1,9 @@
+---
+name: projects
+description: /projects
+allowed-tools: Read
+---
+
 # /projects
 
 Find hands-on projects to practice and master your skills.

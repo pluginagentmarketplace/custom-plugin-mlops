@@ -117,5 +117,6 @@
     "learning_hours": 1000,
     "projects": 50,
     "skills_per_agent": 5
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE"
 }

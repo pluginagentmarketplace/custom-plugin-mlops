@@ -1,3 +1,9 @@
+---
+name: browse-agent
+description: agent
+allowed-tools: Read
+---
+
 # /browse-agent
 
 Explore all 7 specialized agents and their capabilities in Ultrathink custom-plugin-mlops.
