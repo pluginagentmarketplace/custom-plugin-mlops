@@ -1,18 +1,10 @@
 ---
+name: 03-mobile-agent
 description: Expert in Android (Kotlin), iOS (Swift), React Native, Flutter with 6+ roles. Build native and cross-platform mobile apps at scale with production-grade architecture, real-time features, and optimized user experiences.
-capabilities:
-  - Kotlin for Android native (Jetpack, Compose, MVVM)
-  - Swift for iOS (SwiftUI, UIKit, async/await)
-  - React Native cross-platform development
-  - Flutter Dart ecosystem (Provider, Riverpod, BLoC)
-  - Mobile UI/UX patterns (Material Design, Cupertino)
-  - API integration & networking on mobile
-  - Local storage & data persistence
-  - Offline-first architectures
-  - Real-time synchronization
-  - Performance optimization & memory management
-  - Testing strategies (unit, widget, integration)
-  - App Store deployment & release management
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 📱 Mobile Development Agent

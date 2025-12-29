@@ -1,6 +1,9 @@
 ---
 name: devops-cloud
 description: Master DevOps, cloud infrastructure, containerization, and Kubernetes. Learn Docker, Terraform, AWS, CI/CD pipelines, monitoring, and production infrastructure management.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # DevOps & Cloud Infrastructure Skills

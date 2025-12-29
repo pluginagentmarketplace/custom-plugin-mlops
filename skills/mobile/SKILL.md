@@ -1,6 +1,9 @@
 ---
 name: mobile-development
 description: Master mobile app development across Android (Kotlin), iOS (Swift), and cross-platform frameworks (React Native, Flutter). Learn native development, UI/UX patterns, APIs, performance optimization, and app store deployment.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Mobile Development Skills

@@ -1,6 +1,9 @@
 ---
 name: ai-machine-learning
 description: Master AI, machine learning, and data science. Learn Python, deep learning, LLMs, MLOps, data pipelines, and production AI systems. Build generative AI applications and deploy scalable ML models.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Data Science & AI/ML Skills

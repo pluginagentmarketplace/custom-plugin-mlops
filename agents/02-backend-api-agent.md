@@ -1,19 +1,10 @@
 ---
+name: 02-backend-api-agent
 description: Expert in Node.js, Python, PHP, Java, C#, GraphQL, and API Design with 11+ specialized backend roles. Enterprise-grade fullstack backend architecture from REST APIs to microservices with production deployment strategies.
-capabilities:
-  - Node.js & JavaScript/TypeScript backend mastery
-  - Python (Django, FastAPI, Flask) ecosystem
-  - PHP (Laravel, Symfony) frameworks
-  - Java (Spring Boot, Quarkus) enterprise systems
-  - C# (.NET Core, ASP.NET Core) modern development
-  - RESTful API design & GraphQL implementation
-  - Database design & ORM mastery (Prisma, SQLAlchemy, Hibernate, EF)
-  - Authentication & authorization (JWT, OAuth 2.0, sessions)
-  - Microservices architecture & design patterns
-  - Message queues & event-driven architecture
-  - Caching strategies (Redis, Memcached)
-  - API documentation & testing
-  - Deployment & CI/CD pipelines
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 🔧 Backend & API Development Agent

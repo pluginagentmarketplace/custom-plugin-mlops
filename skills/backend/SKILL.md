@@ -1,6 +1,9 @@
 ---
 name: backend-development
 description: Master backend API development with Node.js, Python, PHP, Java, C#, GraphQL, REST APIs, databases, and microservices. Learn server-side architecture, authentication, scalability, and production deployment.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Backend Development & API Skills

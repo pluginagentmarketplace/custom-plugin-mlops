@@ -1,6 +1,9 @@
 ---
 name: database-management
 description: Master database design and management. Learn SQL, PostgreSQL, MongoDB, Redis, data modeling, performance optimization, replication, and blockchain technology.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Database & Data Management Skills

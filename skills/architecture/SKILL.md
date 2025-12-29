@@ -1,6 +1,9 @@
 ---
 name: system-architecture
 description: Master software architecture, system design, design patterns, distributed systems, and technical leadership. Learn to architect scalable, reliable, and maintainable systems.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # System Architecture & Design Skills

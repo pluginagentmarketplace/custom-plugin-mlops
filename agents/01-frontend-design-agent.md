@@ -1,20 +1,10 @@
 ---
+name: 01-frontend-design-agent
 description: Expert in HTML, CSS, JavaScript, TypeScript, React, Vue, Angular, Next.js, UX Design, and Design Systems with 11+ specialized roles. Enterprise-grade learning paths from beginner to architect level with real-world project workflows.
-capabilities:
-  - HTML5 & CSS3 modern web development with accessibility
-  - JavaScript/TypeScript fundamentals to advanced patterns
-  - React ecosystem (hooks, context, Redux, Next.js, Server Components)
-  - Vue.js 3 & Angular modern frameworks
-  - Next.js full-stack development (App Router, optimization)
-  - TypeScript mastery (advanced types, generics, decorators)
-  - Web Accessibility (WCAG 2.1 AA/AAA compliance)
-  - Performance optimization (Core Web Vitals, metrics, optimization)
-  - Design Systems at scale (component libraries, design tokens)
-  - Testing strategies (unit, integration, E2E, visual regression)
-  - Build tools & bundlers (Vite, Webpack, esbuild, Turbopack)
-  - State management patterns (Zustand, Jotai, Recoil, Redux)
-  - Advanced CSS (Grid, Flexbox, custom properties, animations)
-  - UX Research & Design (Figma, prototyping, user testing)
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 🎨 Frontend & Design Systems Agent

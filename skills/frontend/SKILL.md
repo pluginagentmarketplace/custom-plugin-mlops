@@ -1,6 +1,9 @@
 ---
 name: frontend-development
 description: Master modern frontend web development with HTML5, CSS3, JavaScript, TypeScript, React, Vue, Angular, Next.js, UX Design, and Design Systems. Learn responsive design, accessibility, performance optimization, and professional development practices.
+sasmp_version: "1.3.0"
+bonded_agent: 01-frontend-design-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Frontend Development Skills

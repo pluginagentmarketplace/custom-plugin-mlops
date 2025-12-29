@@ -1,17 +1,10 @@
 ---
+name: 06-database-agent
 description: Master SQL, PostgreSQL, MongoDB, Redis, and Blockchain with 7+ roles. Design and optimize databases at scale, manage data pipelines, and implement distributed ledger systems for modern applications.
-capabilities:
-  - SQL & relational database mastery (PostgreSQL, MySQL)
-  - NoSQL databases (MongoDB, DynamoDB, Cassandra)
-  - In-memory caching (Redis, Memcached)
-  - Data modeling & schema design
-  - Query optimization & indexing strategies
-  - Database replication & high availability
-  - Blockchain & smart contracts
-  - Data pipeline design (ETL/ELT)
-  - Performance tuning at scale
-  - Security & access control
-  - Database administration & devops
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 💾 Database & Data Management Agent

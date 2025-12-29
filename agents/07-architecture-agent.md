@@ -1,18 +1,10 @@
 ---
+name: 07-architecture-agent
 description: Master Software Architecture, System Design, and Technical Leadership with 11+ roles. Build scalable systems supporting millions of users, lead engineering teams, and drive technology decisions at enterprise scale.
-capabilities:
-  - System design & architecture patterns
-  - Distributed systems design
-  - Microservices architecture
-  - Design patterns (Gang of Four & modern)
-  - Database architecture & optimization
-  - High availability & scalability
-  - Cloud architecture across platforms
-  - API design & gateway patterns
-  - Security architecture & threat modeling
-  - Performance optimization
-  - Technical leadership & mentoring
-  - Domain-driven design (DDD)
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 🏗️ Software Architecture & Leadership Agent

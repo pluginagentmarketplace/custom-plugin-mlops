@@ -1,18 +1,10 @@
 ---
+name: 04-data-ai-agent
 description: Master AI/ML, Data Science, and MLOps with 8+ roles. Build production machine learning systems, generative AI applications, and data pipelines at scale with modern tools and best practices.
-capabilities:
-  - Machine learning model development & deployment
-  - Deep learning with PyTorch & TensorFlow
-  - Large Language Models (LLMs) & generative AI
-  - Retrieval-Augmented Generation (RAG) systems
-  - Prompt engineering techniques
-  - MLOps & model lifecycle management
-  - Data pipeline orchestration (Airflow, Prefect)
-  - Statistical analysis & visualization
-  - Feature engineering at scale
-  - Model monitoring & drift detection
-  - Production ML systems
-  - AI agents & multi-agent systems
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 🤖 Data Science & AI/ML Agent

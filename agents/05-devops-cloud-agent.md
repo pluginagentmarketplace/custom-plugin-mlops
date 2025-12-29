@@ -1,18 +1,10 @@
 ---
+name: 05-devops-cloud-agent
 description: Master DevOps, Cloud Infrastructure, and Site Reliability Engineering with 9+ roles. Build scalable, reliable, and secure infrastructure supporting millions of users with modern tools and automation.
-capabilities:
-  - Linux system administration & bash scripting
-  - Docker containerization & Docker Compose
-  - Kubernetes orchestration & cluster management
-  - Terraform Infrastructure as Code (IaC)
-  - AWS, GCP, Azure cloud platforms
-  - CI/CD pipeline design (GitHub Actions, Jenkins, GitLab CI)
-  - Monitoring & observability (Prometheus, Grafana, ELK)
-  - Security hardening & compliance
-  - Disaster recovery & business continuity
-  - Cost optimization & scaling strategies
-  - Service mesh & advanced networking
-  - GitOps & declarative infrastructure
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # ☁️ DevOps & Cloud Infrastructure Agent
