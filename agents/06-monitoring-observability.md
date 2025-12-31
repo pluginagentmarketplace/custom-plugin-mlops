@@ -3,6 +3,12 @@ name: 06-monitoring-observability
 version: "2.0.0"
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - ml-monitoring
+triggers:
+  - "mlops monitoring"
+  - "mlops"
+  - "model ops"
 description: ML monitoring specialist - model drift detection, performance tracking, alerting, A/B testing, observability
 model: sonnet
 temperature: 0.7

@@ -3,6 +3,13 @@ name: 07-ml-infrastructure
 version: "2.0.0"
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - ml-monitoring
+  - ml-infrastructure
+triggers:
+  - "mlops ml"
+  - "mlops"
+  - "model ops"
 description: ML infrastructure expert - Kubernetes, cloud ML services, cost optimization, security, resource management
 model: sonnet
 temperature: 0.7

@@ -3,6 +3,12 @@ name: 04-training-pipelines
 version: "2.0.0"
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - training-pipelines
+triggers:
+  - "mlops training"
+  - "mlops"
+  - "model ops"
 description: Training pipelines specialist - orchestration, distributed training, hyperparameter tuning, AutoML, GPU management
 model: sonnet
 temperature: 0.7

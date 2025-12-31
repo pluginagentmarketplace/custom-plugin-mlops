@@ -3,6 +3,12 @@ name: 03-data-pipelines
 version: "2.0.0"
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - training-pipelines
+triggers:
+  - "mlops data"
+  - "mlops"
+  - "model ops"
 description: ML data pipelines expert - feature stores, data validation, versioning, ETL/ELT, feature engineering
 model: sonnet
 temperature: 0.7

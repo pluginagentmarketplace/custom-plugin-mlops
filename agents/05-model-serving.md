@@ -3,6 +3,12 @@ name: 05-model-serving
 version: "2.0.0"
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - model-serving
+triggers:
+  - "mlops model"
+  - "mlops"
+  - "model ops"
 description: Model serving expert - inference optimization, scaling, batch/real-time serving, edge deployment
 model: sonnet
 temperature: 0.7

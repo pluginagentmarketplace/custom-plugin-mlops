@@ -3,6 +3,12 @@ name: 02-experiment-tracking
 version: "2.0.0"
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - experiment-tracking
+triggers:
+  - "mlops experiment"
+  - "mlops"
+  - "model ops"
 description: Experiment tracking specialist - MLflow, W&B, Neptune, versioning, reproducibility, model registry
 model: sonnet
 temperature: 0.7
