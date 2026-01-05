@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-mlops
+/plugin marketplace add pluginagentmarketplace/custom-plugin-mlops
 
 # Step 2️⃣ Install the plugin
 /plugin install custom-plugin-mlops@pluginagentmarketplace-mlops
